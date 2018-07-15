@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <title>Language Processing</title>
+</head>
+<body>
+        <div class="container">
+                <div class="notification">
+                  NLP Playground
+                </div>
+
+                <div class="columns">
+                        <div class="column">
+                           # Input Text
+
+                            <textarea id="text-input" class="textarea" placeholder="e.g. Hello world"></textarea>
+                        </div>
+                        <div class="column">
+                            # Output Text
+                            <textarea id="text-output" class="textarea" placeholder="e.g. Hello world"></textarea>
+                        </div>
+                       
+                </div>
+                <div>
+
+                        <div class="select" >
+                                <select id="action">
+                                  <option disabled>Select dropdown</option>
+                                  <option selected value="toPlural">Turn into plural-form</option>
+                                  <option value="toNegative">Change to a negative</option>
+                                  <option value="toPastTense">To Past Tense</option>
+                                  <option value="toPresentTense">To Present Tense</option>
+                                  <option value="toFutureTense">To Future Tense</option>
+                                </select>
+                              </div>
+                       
+                </div>
+                <div>
+                        <button id="btn-run" class="button is-success">RUN &rarr;</button>
+                </div>
+              </div>
+<script src="./app.js"></script>
+</body>
+</html>
